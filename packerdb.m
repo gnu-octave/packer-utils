@@ -1,4 +1,4 @@
-d.config={'packer.db' 'https://raw.githubusercontent.com/octave-de/packer-utils/master/sfnet.m'};
+d.config={'packer.db' 'https://raw.githubusercontent.com/octave-de/packer-utils/master/packerdb.m'};
 
 
 d.sfnet={...

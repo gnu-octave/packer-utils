@@ -41,7 +41,7 @@ grep -Po '(?<=(<div class="package" id="))[^"]+' $tmpdir/packages.php > $tmpdir/
 
 ## add db.config
 
-echo -e "d.config={'packer.db' 'https://raw.githubusercontent.com/octave-de/packer-utils/master/sfnet.m'};\n\n" > sfnet.m
+echo -e "d.config={'packer.db' 'https://raw.githubusercontent.com/octave-de/packer-utils/master/packerdb.m'};\n\n" > sfnet.m
 
 ## add db.sfnet
 
