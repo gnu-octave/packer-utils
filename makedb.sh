@@ -10,8 +10,8 @@ echo "Using tmpdir $tmpdir"
 wget -qP $tmpdir http://octave.sourceforge.net/packages.php
 grep -Po '(?<=(<div class="package" id="))[^"]+' $tmpdir/packages.php > $tmpdir/sfnet_packages
 
-echo -e "db.config={'~/.octave/pckr.mat' 'https://github.com/octave-de/p/pckr.m'};\n\n" > sfnet.m
-echo -e "db.sfnet={..." >> sfnet.m
+echo -e "d.config={'packer.db' 'https://raw.githubusercontent.com/octave-de/packer-utils/master/sfnet.m'};\n\n" > sfnet.m
+echo -e "d.sfnet={..." >> sfnet.m
 
 while read -r line
 do
