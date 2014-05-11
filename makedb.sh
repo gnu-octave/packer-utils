@@ -115,7 +115,7 @@ do
         done
 	deps=$(grep Depends $tmpdir/pkgs/$extractfolder/DESCRIPTION)
 	description=$(grep Description $tmpdir/pkgs/$extractfolder/DESCRIPTION | sed s/'Description: '//)
-	echo -e '\t\t} "$description";\n' >> sfnet.m
+	echo -e "\t\t} \"$description\";\n" >> sfnet.m
 
     ## TODO: Add description
 
